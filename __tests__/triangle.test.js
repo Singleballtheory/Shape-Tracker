@@ -29,3 +29,15 @@ test('should correctly determine whether three lengths make an equilateral trian
   const equiTriangle = new Triangle(5,5,5)
   expect(equiTriangle.checkType()).toEqual("equilateral triangle");
 });
+
+describe('Triangle', () => {
+  let reusableTriangle;
+
+  beforeEach(() => {
+    reusableTriangle = new Triangle(5, 5, 5);
+  });
+
+  test('should show how beforeEach() works', () => {
+    console.log(reusableTriangle);
+  });
+});
